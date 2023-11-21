@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экологический расчет</title>
+</head>
+<body>
+    <h1>Введите данные для расчета</h1>
+    <form id="ecologicalForm">
+        <label for="input1">Показатель 1:</label>
+        <input type="number" id="input1" name="input1"><br><br>
+        <label for="input2">Показатель 2:</label>
+        <input type="number" id="input2" name="input2"><br><br>
+        <button type="button" onclick="calculateEcologicalData()">Рассчитать</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculateEcologicalData() {
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            // Расчет экологических показателей на основе введенных данных
+            var result = input1 * input2; // Например, простой расчет
+            document.getElementById('result').innerText = 'Результат расчета: ' + result;
+        }
+    </script>
+</body>
+</html>

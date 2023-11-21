@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты</title>
+    <title>Расчет</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,15 +31,18 @@
       </nav>
     </header>
 
-    <section id="contact">
-      <h2>Контакты</h2>
-      <p>
-        Свяжитесь с нами, чтобы узнать больше о наших услугах и возможностях
-        сотрудничества.
-      </p>
+    <section id="ecologicalForm">
+      <h2>Введите данные для расчета уровня загрязнения:</h2>
       <ul>
-        <li>Email: SIIIIIIS@eco.ru</li>
-        <li>Телефон: +7 (985) 666-00-00</li>
+        <label for="input1">Показатель загрязнения воздуха:</label>
+        <input type="number" id="input1" name="input1"><br><br>
+        <label for="input2">Показатель загрязнения воды:</label>
+        <input type="number" id="input2" name="input2"><br><br>
+        <label for="input1">Количество отходов произведенных предприятием:</label>
+        <input type="number" id="input1" name="input1"><br><br>
+        <label for="input1">Количество отходов утилизированных предприятием:</label>
+        <input type="number" id="input1" name="input1"><br><br>
+        <button type="button" onclick="calculateEcologicalData()">Рассчитать уровень <br>загрязнения</button>
       </ul>
     </section>
 

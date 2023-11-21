@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      src="logo.png"
+      alt="Логотип"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 13.5%;
+        max-height: 13.5%;
+      "
+    />
+    <header>
+      <h1>EcoCheck</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="uslugi.html">Услуги</a></li>
+          <li><a href="raschet.html">Расчет</a></li>
+          <li><a href="tablica.html">Таблица</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="ecologicalForm">
+      <h2>Таблица объектов, негативно воздействующих на окружающую среду</h2>
+      <style>
+       table {
+           border-collapse: collapse;
+           width: 100%;
+       }
+       th, td {
+           border: 1px solid black;
+           padding: 8px;
+           text-align: center;
+       }
+   </style>
+      <table>
+          <tr>
+              <th>Название объекта</th>
+              <th>Местоположение</th>
+              <th>Уровень загрязнения</th>
+          </tr>
+          <tr>
+              <td>Завод</td>
+              <td>Москва</td>
+              <td>70 (Высокий)</td>
+          </tr>
+          <tr>
+              <td>Химический завод</td>
+              <td>Сочи</td>
+              <td>55 (Средний)</td>
+          </tr>
+          <tr>
+              <td>Нефтяная вышка</td>
+              <td>Новокузнецк</td>
+              <td>75 (Высокий)</td>
+          </tr>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Компания EcoCheck. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
